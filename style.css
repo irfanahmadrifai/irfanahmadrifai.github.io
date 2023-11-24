@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar */
+nav {
+    background: rgba(255, 255, 255, 0.959);
+    padding: 0.5em 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* position */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav > a {
+    font-family: 'Pacifico';
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+nav > a > span {
+    color: rgb(15, 165, 115);
+}
+
+nav > ul {
+    list-style: none;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+    padding-bottom: 0.4em;
+    transition: all;
+    transition-duration: 0.3s;
+    border-bottom: 1px solid rgba(15, 165, 115, 0);
+
+    &:hover {
+        border-bottom: 1px solid rgb(15, 165, 115);
+    }
+}
+
+
+/* homepage */
+#home {
+    background: rgb(242, 248, 246);
+    height: 100vh; 
+}
+
+#home > .container {
+    padding: 8em 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+}
+
+.homecontent > h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.homecontent p {
+    color: rgb(142, 144, 146);
+    margin-bottom: 2.5em;
+}
+
+.homecontent a {
+    background-color: rgb(15, 165, 115);
+    color: white;
+    padding: 0.6em 2em;
+    border-radius: 5em;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(103, 214, 177);
+        color: black;
+    }
+}
+
+
+/* work */
+#work {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+#work > h2 {
+    margin: 0;
+    padding-top : 2em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#work > p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#work > div.container {
+    padding: 2em 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+
+}
+
+.card {
+    background-color: rgb(242, 248, 246);
+    max-width: 30%;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card > img {
+    filter: grayscale(80%);
+    &:hover {
+        filter: grayscale(0);
+        transform: scale(110%);
+    }
+}
